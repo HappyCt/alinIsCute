@@ -1,0 +1,39 @@
+[gd_scene load_steps=3 format=3 uid="uid://ch8d1fxcjfkg3"]
+
+[ext_resource type="Texture2D" uid="uid://dani5acjy0j0i" path="res://Pixel Art Top Down - Basic v1.1.2/Texture/TX Tileset Grass.png" id="1_s6dok"]
+[ext_resource type="PackedScene" uid="uid://dcapyaovc6f36" path="res://Character/player.tscn" id="2_1kc1q"]
+
+[node name="Node2D" type="Node2D"]
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(-64, 64)
+texture = ExtResource("1_s6dok")
+hframes = 2
+vframes = 2
+frame = 1
+
+[node name="Sprite2D2" type="Sprite2D" parent="."]
+position = Vector2(-64, -64)
+texture = ExtResource("1_s6dok")
+hframes = 2
+vframes = 2
+frame = 1
+
+[node name="Sprite2D3" type="Sprite2D" parent="."]
+position = Vector2(64, -64)
+texture = ExtResource("1_s6dok")
+hframes = 2
+vframes = 2
+frame = 1
+
+[node name="Sprite2D4" type="Sprite2D" parent="."]
+position = Vector2(64, 64)
+texture = ExtResource("1_s6dok")
+hframes = 2
+vframes = 2
+frame = 1
+
+[node name="Camera2D" type="Camera2D" parent="."]
+zoom = Vector2(4.95, 4.95)
+
+[node name="player" parent="." instance=ExtResource("2_1kc1q")]
